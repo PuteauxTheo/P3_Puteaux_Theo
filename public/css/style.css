@@ -1,0 +1,14 @@
+main {
+  background-color: #9356DC;
+}
+
+button {
+  border: 1px solid red;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
