@@ -2,13 +2,25 @@ main {
   background-color: #9356DC;
 }
 
-button {
-  border: 1px solid red;
+.info__restaurant__button {
+  background-color: #FF79DA;
+  color: #fff;
 }
 
 .header__logo {
   display: flex;
   justify-content: center;
+}
+.header__place {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #c2c2c2;
+}
+
+.info__restaurant {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
