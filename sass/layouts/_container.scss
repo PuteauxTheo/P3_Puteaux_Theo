@@ -1,11 +1,62 @@
 .info__restaurant{
     display: flex;
     flex-direction: column;
-    &__tittle{
+    background-color: rgb(216, 212, 212);
+    align-items: center;
+    &__title{
+        text-align: center;
+        width: 80%;
+    }
+    &__text{
+        text-align: center;
+        width: 80%;
+    }
+}
 
+.fonctionnement{
+
+    &__content{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
     }
 
-    &__button{
+    &__choix{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        width: 80%;
+    }
+    
 
+}
+
+.restaurant{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(224, 224, 224);
+}
+
+
+.restaurant__content{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    border: 1px solid black;
+    
+    &-img{
+        height:175px;
+        & > img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-text{
+        display: flex;
+        flex-direction: column;
+        height: 75px;
     }
 }
