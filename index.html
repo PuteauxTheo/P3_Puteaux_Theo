@@ -4,8 +4,12 @@
 
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>OhMyFood</title>
         <link rel="stylesheet" href="./public/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/15d41a8749.js" crossorigin="anonymous"></script>
     </head>
 
@@ -33,53 +37,79 @@
                 </button>
             </section>
 
-            <section>
-                <div>
+            <section class="fonctionnement">
+                <div class="fonctionnement__title">
                     <h1>Fonctionnement</h1>
                 </div>
-
-                <div>
-                    <span>
-                        <i class="fas fa-mobile-alt"></i>
-                    </span>
-                    <span>
+                <div class="fonctionnement__content">
+                    <div class="fonctionnement__choix">
+                        <span class="fonctionnement__choix_icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </span>
                         <p>Choisissez un restaurant</p>
-                    </span>
-                </div>
+                    </div>
 
-                <div>
-                    <span>
-                        <i class="fas fa-list-ul"></i>
-                    </span>
-                    <span>
+                    <div class="fonctionnement__choix">
+                        <span class="fonctionnement__choix_icon">
+                            <i class="fas fa-list-ul"></i>
+                        </span>
                         <p>Composez votre menu</p>
-                    </span>
-                </div>
+                    </div>
 
-                <div>
-                    <span>
-                        <i class="fas fa-store"></i>
-                    </span>
-                    <span>
+                    <div class="fonctionnement__choix">
+                        <span class="fonctionnement__choix_icon">
+                            <i class="fas fa-store"></i>
+                        </span>
                         <p>Dégustez au restaurant</p>
-                    </span>
+                    </div>
                 </div>
             </section>
 
-            <section>
-                <div>
+            <section class="restaurant">
+                <div class="restaurant__title">
                     <h1>Restaurants</h1>
                 </div>
 
-                <div>
-                    <article>
-                        <div>
-                            <img>
+                <div class="restaurant__view">
+                    <article class="restaurant__content">
+                        <div class="restaurant__content-img">
+                            <img src='images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg'>
                         </div>
-                        <div>
+                        <div class="restaurant__content-text">
                             <div>
-                                <h2>La palette du goût</h2>
-                                <p>Ménilmontant</p>
+                                <h2 class="restaurant__content-title">La palette du goût</h2>
+                                <p class="restaurant__content-def">Ménilmontant</p>
+                            </div>
+                            <span>
+
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="restaurant__content">
+                        <div class="restaurant__content-img">
+                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+                        </div>
+                            <div class="restaurant__content-text">
+                                <div >
+                                <h2 class="restaurant__content-title">La note enchantée</h2>
+                                <p class="restaurant__content-def">Charonne</p>
+                            </div>
+                            <span>
+
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="restaurant__content">
+                        <div class="restaurant__content-img">
+                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+                        </div>
+                            <div class="restaurant__content-text">
+                                <div>
+                            <div>
+                                <h2 class="restaurant__content-title">À la française</h2>
+                                <p class="restaurant__content-def">Cité Rouge</p>
                             </div>
                             <span>
 
@@ -88,43 +118,14 @@
                     </article>
 
                     <article>
-                        <div>
-                            <img>
+                        <div class="restaurant__content-img">
+                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
                         </div>
-                        <div>
+                            <div class="restaurant__content-text">
+                                <div>
                             <div>
-                                <h2>La note enchantée</h2>
-                                <p>Charonne</p>
-                            </div>
-                            <span>
-
-                            </span>
-                        </div>
-                    </article>
-
-                    <article>
-                        <div>
-                            <img>
-                        </div>
-                        <div>
-                            <div>
-                                <h2>À la française</h2>
-                                <p>Cité Rouge</p>
-                            </div>
-                            <span>
-
-                            </span>
-                        </div>
-                    </article>
-
-                    <article>
-                        <div>
-                            <img>
-                        </div>
-                        <div>
-                            <div>
-                                <h2>Le délice des sens</h2>
-                                <p>Folie-Méricourt</p>
+                                <h2 class="restaurant__content-title">Le délice des sens</h2>
+                                <p class="restaurant__content-def">Folie-Méricourt</p>
                             </div>
                             <span>
 
