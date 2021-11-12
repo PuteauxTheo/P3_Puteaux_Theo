@@ -1,10 +1,23 @@
-main {
-  background-color: #9356DC;
+html {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+.restaurant__content-title {
+  margin: 0;
+}
+
+.restaurant__content-def {
+  margin: 0;
 }
 
 .info__restaurant__button {
   background-color: #FF79DA;
   color: #fff;
+  width: 60%;
 }
 
 .header__logo {
@@ -21,6 +34,58 @@ main {
 .info__restaurant {
   display: flex;
   flex-direction: column;
+  background-color: #d8d4d4;
+  align-items: center;
+}
+.info__restaurant__title {
+  text-align: center;
+  width: 80%;
+}
+.info__restaurant__text {
+  text-align: center;
+  width: 80%;
+}
+
+.fonctionnement__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fonctionnement__choix {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  width: 80%;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: #e0e0e0;
+}
+
+.restaurant__content {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  border: 1px solid black;
+}
+.restaurant__content-img {
+  height: 175px;
+}
+.restaurant__content-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.restaurant__content-text {
+  display: flex;
+  flex-direction: column;
+  height: 75px;
+}
+
+footer {
+  background-color: #383838;
 }
 
 /*# sourceMappingURL=style.css.map */
