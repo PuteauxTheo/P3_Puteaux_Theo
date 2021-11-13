@@ -1,7 +1,7 @@
 .info__restaurant{
     display: flex;
     flex-direction: column;
-    background-color: rgb(216, 212, 212);
+    background-color: $color-bg-info-restaurant;
     align-items: center;
     &__title{
         text-align: center;
@@ -35,7 +35,7 @@
 .restaurant{
     display: flex;
     flex-direction: column;
-    background-color: rgb(224, 224, 224);
+    background-color: $color-bg-restaurant;
 }
 
 
@@ -44,6 +44,7 @@
     flex-direction: column;
     height: 250px;
     border: 1px solid black;
+    margin: 15px;
     
     &-img{
         height:175px;
@@ -58,5 +59,6 @@
         display: flex;
         flex-direction: column;
         height: 75px;
+        background-color: #fff;
     }
 }
