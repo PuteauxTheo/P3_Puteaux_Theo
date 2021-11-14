@@ -3,30 +3,44 @@
     flex-direction: column;
     background-color: $color-bg-info-restaurant;
     align-items: center;
+    padding-bottom: 60px;
     &__title{
         text-align: center;
-        width: 80%;
+        width: 75%;
     }
     &__text{
         text-align: center;
-        width: 80%;
+        width: 75%;
     }
 }
 
 .fonctionnement{
-
-    &__content{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    &__view{
 
         display: flex;
         flex-direction: column;
-        align-items: center;        
+        align-items: center;
+                
     }
 
-    &__choix{
+    &__content{
         display: flex;
         flex-direction: row;
-        border: 1px solid black;
+        height: 75px;
+        border-radius: 20px;
         width: 80%;
+        align-items: center;
+        margin: 15px;
+        background-color: $color-bg-fonctionnement;
+        &-icon{
+            display: flex;
+            height: 100%;
+            width: 75px;
+            justify-content: center;
+            align-items: center;
+        }
     }
     
 
@@ -43,22 +57,37 @@
     display: flex;
     flex-direction: column;
     height: 250px;
-    border: 1px solid black;
     margin: 15px;
+    border-radius: 20px;
     
     &-img{
-        height:175px;
+        height: 175px;
+        
         & > img{
             height: 100%;
             width: 100%;
-            object-fit: cover;
+            object-fit: cover;   
+            border-radius: 20px 20px 0px 0px;     
         }
     }
 
     &-text{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         height: 75px;
         background-color: #fff;
+        border-radius: 0px 0px 20px 20px; 
+
+        &__name{
+            height: 60px;
+            width: 100%;
+        }
+        &--icon{
+            display: flex;
+            height: 60px;
+            width: 60px;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
