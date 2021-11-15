@@ -6,16 +6,22 @@ h1, h2, h3 {
   font-family: "Roboto", sans-serif;
 }
 
-.restaurant__content-text--title {
+.fonctionnement__title, .restaurant__title {
+  margin: 15px;
+}
+
+.restaurant__content-text--def, .restaurant__content-text--title, h1 {
   margin: 0;
 }
 
-.restaurant__content-text--def {
-  margin: 0;
-}
-
-.footer h3 {
+.footer__list-logo {
+  font-family: "Shrikhand", cursive;
   color: #fff;
+}
+.footer p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 0px;
 }
 
 .info__restaurant__button {
@@ -49,7 +55,7 @@ h1, h2, h3 {
   flex-direction: column;
   background-color: #d8d4d4;
   align-items: center;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 .info__restaurant__title {
   text-align: center;
@@ -61,8 +67,7 @@ h1, h2, h3 {
 }
 
 .fonctionnement {
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding: 50px 0px;
 }
 .fonctionnement__view {
   display: flex;
@@ -74,7 +79,7 @@ h1, h2, h3 {
   flex-direction: row;
   height: 75px;
   border-radius: 20px;
-  width: 80%;
+  width: -webkit-fill-available;
   align-items: center;
   margin: 15px;
   background-color: #d8d4d4;
@@ -91,6 +96,7 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   background-color: #e0e0e0;
+  padding-top: 40px;
 }
 
 .restaurant__content {
@@ -119,6 +125,7 @@ h1, h2, h3 {
 .restaurant__content-text__name {
   height: 60px;
   width: 100%;
+  margin: 15px;
 }
 .restaurant__content-text--icon {
   display: flex;
@@ -152,6 +159,11 @@ h1, h2, h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.footer__list-element--icon {
+  display: flex;
+  color: #fff;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
