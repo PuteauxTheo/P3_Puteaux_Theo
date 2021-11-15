@@ -2,14 +2,24 @@ h1, h2, h3{
     font-family: 'Roboto', sans-serif; 
 }
 
-.restaurant__content-text--title{
-    margin: 0;
+.fonctionnement__title,.restaurant__title{
+    margin: 15px;
 }
 
-.restaurant__content-text--def{
-    margin: 0;
+.restaurant__content-text--def,.restaurant__content-text--title,h1{
+    @include no__marge;
 }
 
 .footer{
-    h3{color: $color-footer-list-title;}
+
+    &__list-logo{
+        font-family: 'Shrikhand', cursive;
+        color: #fff;
+    }
+    p{
+        color: $color-footer-list;
+        font-family: 'Roboto', sans-serif; 
+        margin: 10px 0px;
+
+    }
 }
