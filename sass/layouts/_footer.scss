@@ -6,6 +6,11 @@
         flex-direction: column;
         padding: 0px;
         margin: 20px 15px;
+        @media (max-width:992px) and (min-width:768px) {
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
         &-logo{
             display: flex;
             height: 25px;
@@ -22,6 +27,9 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            @media (max-width:992px) and (min-width:768px) {
+                margin: 10px;
+            }
             &--icon{
                 display: flex;
                 color: $color-footer-list;
