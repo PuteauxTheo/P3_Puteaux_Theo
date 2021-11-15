@@ -22,6 +22,11 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            &--icon{
+                display: flex;
+                color: $color-footer-list;
+                margin-right: 10px;
+            }
         }
     }
 }
