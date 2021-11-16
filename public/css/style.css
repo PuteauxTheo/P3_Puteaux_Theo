@@ -32,6 +32,11 @@ h1, h2, h3 {
   border: none;
 }
 
+@media (max-width: 992px) and (min-width: 768px) {
+  .header {
+    display: flex;
+  }
+}
 .header__logo {
   display: flex;
   height: 25px;
@@ -48,6 +53,11 @@ h1, h2, h3 {
   justify-content: center;
   align-items: center;
   background-color: #c2c2c2;
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .header__place {
+    background-color: white;
+  }
 }
 
 .info__restaurant {
