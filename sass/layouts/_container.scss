@@ -1,4 +1,7 @@
+
+
 .info__restaurant{
+    
     display: flex;
     flex-direction: column;
     background-color: $color-bg-info-restaurant;
@@ -12,6 +15,7 @@
         text-align: center;
         width: 75%;
     }
+
 }
 
 .fonctionnement{
@@ -21,6 +25,10 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
         align-items: center;
+        @media screen and (min-width:992px) {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
         @media (max-width:992px) and (min-width:768px) {
             display: grid;
             grid-template-columns: repeat(3,1fr);
@@ -46,7 +54,6 @@
         }
     }
     
-
 }
 
 .restaurant{
@@ -55,6 +62,10 @@
     background-color: $color-bg-restaurant;
     padding-top: 40px;
     &__view{
+        @media  screen and (min-width:992px) {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
         @media (max-width:992px) and (min-width:768px) {
             display: grid;
             grid-template-columns: repeat(2,1fr);
