@@ -1,12 +1,13 @@
 .header{
 
-    @media (max-width:992px) and (min-width:768px) {
+    @media screen and (min-width:768px) {
         display: flex;
+        justify-content: space-around;
     }
     &__logo{
         display: flex;
         height: 25px;
-        margin: 10px auto;
+        margin: 10px;
         & > img{
             height: 100%;
             width: 100%;
@@ -21,9 +22,16 @@
         justify-content: center;
         align-items: center;
         background-color: $color-header-bottom;
-        @media (max-width:992px) and (min-width:768px) {
+
+        @media screen and (min-width:768px) {
             background-color: rgb(255, 255, 255);
         }
+
+        &-icon{
+            display: flex;
+            margin: auto 10px;
+        }
+
         
     }
 
