@@ -44,13 +44,8 @@ h1, h2, h3 {
 }
 .header__logo {
   display: flex;
-  height: 25px;
+  justify-content: center;
   margin: 10px;
-}
-.header__logo > img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
 }
 .header__place {
   display: flex;
@@ -176,6 +171,15 @@ h1, h2, h3 {
   width: 60px;
   justify-content: center;
   align-items: center;
+}
+
+.img__menu {
+  display: flex;
+}
+.img__menu > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .footer {
