@@ -4,16 +4,11 @@
         display: flex;
         justify-content: space-around;
     }
+
     &__logo{
         display: flex;
-        height: 25px;
+        justify-content: center;
         margin: 10px;
-        & > img{
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-            
-        }
     }
 
     &__place{
@@ -34,6 +29,8 @@
 
         
     }
+
+    
 
     
 
