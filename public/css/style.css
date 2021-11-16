@@ -6,6 +6,10 @@ h1, h2, h3 {
   font-family: "Roboto", sans-serif;
 }
 
+.header__logo-title {
+  font-family: "Shrikhand", cursive;
+}
+
 .fonctionnement__title, .restaurant__title {
   margin: 15px;
 }
@@ -27,20 +31,21 @@ h1, h2, h3 {
 .info__restaurant__button {
   background-color: #FF79DA;
   color: #fff;
-  width: 60%;
   border-radius: 100px;
   border: none;
+  padding: 5px 20px;
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header {
     display: flex;
+    justify-content: space-around;
   }
 }
 .header__logo {
   display: flex;
   height: 25px;
-  margin: 10px auto;
+  margin: 10px;
 }
 .header__logo > img {
   height: 100%;
@@ -54,10 +59,14 @@ h1, h2, h3 {
   align-items: center;
   background-color: #c2c2c2;
 }
-@media (max-width: 992px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header__place {
     background-color: white;
   }
+}
+.header__place-icon {
+  display: flex;
+  margin: auto 10px;
 }
 
 .info__restaurant {
@@ -83,6 +92,12 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .fonctionnement__view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 992px) and (min-width: 768px) {
   .fonctionnement__view {
@@ -113,6 +128,12 @@ h1, h2, h3 {
   grid-template-columns: repeat(1, 1fr);
   background-color: #e0e0e0;
   padding-top: 40px;
+}
+@media screen and (min-width: 992px) {
+  .restaurant__view {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 992px) and (min-width: 768px) {
   .restaurant__view {
