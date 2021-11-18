@@ -28,6 +28,10 @@ h1, h2, h3 {
   margin: 10px 0px;
 }
 
+.element__menu-title, .element__menu-description, .element__menu-price {
+  margin: 0;
+}
+
 .info__restaurant__button {
   background-color: #FF79DA;
   color: #fff;
@@ -36,6 +40,16 @@ h1, h2, h3 {
   padding: 5px 20px;
 }
 
+.button__order {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0px;
+}
+
+.header {
+  max-width: 1280px;
+  margin: auto;
+}
 @media screen and (min-width: 768px) {
   .header {
     display: flex;
@@ -81,6 +95,8 @@ h1, h2, h3 {
 }
 
 .fonctionnement {
+  max-width: 1280px;
+  margin: auto;
   padding: 50px 0px;
 }
 .fonctionnement__view {
@@ -119,19 +135,30 @@ h1, h2, h3 {
 }
 
 .restaurant {
+  background-color: #e0e0e0;
+}
+
+.container__restaurant {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  background-color: #e0e0e0;
   padding-top: 40px;
+  max-width: 1280px;
+  margin: auto;
+}
+.container__restaurant__title {
+  margin: 15px;
+}
+.container__restaurant__view {
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 992px) {
-  .restaurant__view {
+  .container__restaurant__view {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 992px) and (min-width: 768px) {
-  .restaurant__view {
+  .container__restaurant__view {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -173,13 +200,39 @@ h1, h2, h3 {
   align-items: center;
 }
 
-.img__menu {
-  display: flex;
+.menu {
+  background-color: #d8d4d4;
 }
+
 .img__menu > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.top__title__menu {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  justify-content: space-between;
+}
+
+.element__menu {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 15px;
+  row-gap: 15px;
+}
+.element__menu__def {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+}
+.element__menu__def-price {
+  display: flex;
+  align-items: flex-end;
 }
 
 .footer {
