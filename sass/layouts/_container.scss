@@ -67,6 +67,9 @@
     @include max__with__desktop;
     &__title{
         margin: 15px;
+        & > h2{
+            @include no__marge;
+        }
     }
     &__view{
         padding-bottom: 30px;
