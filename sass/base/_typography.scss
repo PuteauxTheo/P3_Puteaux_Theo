@@ -26,3 +26,7 @@ h1, h2, h3{
 
     }
 }
+
+.element__menu-title, .element__menu-description, .element__menu-price{
+    @include no__marge;
+}
