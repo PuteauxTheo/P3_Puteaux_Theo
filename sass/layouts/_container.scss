@@ -19,6 +19,7 @@
 }
 
 .fonctionnement{
+    @include max__with__desktop;
     padding: 50px 0px;
     &__view{
 
@@ -57,11 +58,18 @@
 }
 
 .restaurant{
+    background-color: $color-bg-restaurant;
+}
+.container__restaurant{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    background-color: $color-bg-restaurant;
     padding-top: 40px;
+    @include max__with__desktop;
+    &__title{
+        margin: 15px;
+    }
     &__view{
+        padding-bottom: 30px;
         @media  screen and (min-width:992px) {
             display: grid;
             grid-template-columns: repeat(2,1fr);
@@ -114,11 +122,40 @@
     }
 }
 
+.menu{
+    background-color: $color-bg-menu;
+}
+
 .img__menu{
-    display: flex;
     & > img{
         height: 100%;
         width: 100%;
         object-fit: cover;
+    }
+}
+
+.top__title__menu{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    justify-content: space-between;
+}
+
+.element__menu{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 15px;
+    row-gap: 15px;
+    &__def{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 10px;
+
+        &-price{
+            display: flex;
+            align-items: flex-end;            
+        }
     }
 }
