@@ -10,11 +10,6 @@ header{
     @include max__with__desktop;
     
 
-    @media screen and (min-width:768px) {
-        display: flex;
-        justify-content: space-around;
-    }
-
     &__logo{
         display: flex;
         justify-content: center;
@@ -24,28 +19,4 @@ header{
         position: relative;
         }
     }
-
-    &__place{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-color: $color-header-bottom;
-
-        @media screen and (min-width:768px) {
-            background-color: rgb(255, 255, 255);
-        }
-
-        &-icon{
-            display: flex;
-            margin: auto 10px;
-        }
-
-        
-    }
-
-    
-
-    
-
 }
