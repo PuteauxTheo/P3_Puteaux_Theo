@@ -41,7 +41,11 @@ a {
   font-size: xx-large;
 }
 
-.container__info__restaurant__button {
+.fa-arrow-left {
+  font-size: x-large;
+}
+
+.container__info__restaurant__button, .button__order {
   background-color: #FF79DA;
   background: linear-gradient(350deg, #9356DC 0%, #FF79DA 100%);
   color: #fff;
@@ -50,10 +54,11 @@ a {
   padding: 5px 20px;
 }
 
-.button__order {
+.btn {
   display: flex;
-  justify-content: center;
-  padding: 25px 0px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
@@ -79,6 +84,16 @@ a {
     z-index: 1;
     position: relative;
   }
+}
+
+.header-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 0;
+  bottom: 50%;
+  margin-left: 30px;
 }
 
 .top__place {
@@ -263,6 +278,7 @@ a {
   opacity: 0;
 }
 
+/*----------------------CSS POUR MENU -------------------*/
 .menu {
   background-color: #d8d4d4;
 }
@@ -284,7 +300,19 @@ a {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   margin: 15px;
+}
+.element__menu_container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   row-gap: 15px;
+}
+@media screen and (min-width: 992px) {
+  .element__menu_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15px;
+    column-gap: 15px;
+  }
 }
 .element__menu__def {
   display: flex;
@@ -292,6 +320,7 @@ a {
   justify-content: space-between;
   background-color: #fff;
   padding: 10px;
+  border-radius: 15px;
 }
 .element__menu__def-price {
   display: flex;
