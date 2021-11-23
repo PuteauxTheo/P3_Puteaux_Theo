@@ -1,5 +1,6 @@
-.info__restaurant__button{
+.container__info__restaurant__button{
     background-color: $color-secondary;
+    background: linear-gradient(350deg,$color-primary 0%, $color-secondary 100%);
     color: #fff;
     border-radius: 100px;
     border:none;
