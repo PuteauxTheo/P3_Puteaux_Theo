@@ -1,4 +1,5 @@
-.container__info__restaurant__button{
+
+.container__info__restaurant__button, .button__order{
     background-color: $color-secondary;
     background: linear-gradient(350deg,$color-primary 0%, $color-secondary 100%);
     color: #fff;
@@ -8,8 +9,10 @@
     
 }
 
-.button__order{
+.btn{
     display: flex;
-    justify-content: center;
-    padding: 25px 0px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
 }
+
