@@ -15,29 +15,29 @@
     </head>
 
     <body>
-        <header class="test">
-            <div class="header">
+        <header>
                 <div class="header__logo">
                     <h1 class="header__logo-title">ohmyfood</h1>
-                </div> 
-
-                <section class="header__place">
-                    <span class="header__place-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </span>
-                    <h2>Paris, Belleville</h2>
-                </section>
-            </div>
+                </div>             
         </header>
 
         <main>
 
+            <section class="top__place">
+                <span class="top__place-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <h2>Paris, Belleville</h2>
+            </section>
+
             <section class="info__restaurant">
-                <h2 class="info__restaurant__title">Réservez le menu qui vous convient </h2>
-                <p class="info__restaurant__text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <button class="info__restaurant__button">
-                    <p>Explorer nos restaurants</p>
-                </button>
+                <div class="container__info__restaurant">
+                    <h2 class="container__info__restaurant__title">Réservez le menu qui vous convient </h2>
+                    <p class="container__info__restaurant__text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                    <button class="container__info__restaurant__button">
+                        <p>Explorer nos restaurants</p>
+                    </button>
+                </div>
             </section>
 
             <section class="fonctionnement">
@@ -45,7 +45,8 @@
                     <h1>Fonctionnement</h1>
                 </div>
                 <div class="fonctionnement__view">
-                    <div class="fonctionnement__content">
+                    <div class="fonctionnement__content">                        
+                        <span class="numero-fonctionnement">1</span>
                         <span class="fonctionnement__content-icon">
                             <i class="fas fa-mobile-alt"></i>
                         </span>
@@ -53,6 +54,7 @@
                     </div>
 
                     <div class="fonctionnement__content">
+                        <span class="numero-fonctionnement">2</span>
                         <span class="fonctionnement__content-icon">
                             <i class="fas fa-list-ul"></i>
                         </span>
@@ -60,6 +62,7 @@
                     </div>
 
                     <div class="fonctionnement__content">
+                        <span class="numero-fonctionnement">3</span>
                         <span class="fonctionnement__content-icon">
                             <i class="fas fa-store"></i>
                         </span>
@@ -79,6 +82,7 @@
                             <a class="restaurant__content" href="menu_La_palette_du_gout.html">
                                 <div class="restaurant__content-img">
                                     <img src='images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg'>
+                                    <span class="badge-new">Nouveau</span>
                                 </div>
                                 <div class="restaurant__content-text">
                                     <div class="restaurant__content-text__name">
@@ -96,6 +100,9 @@
                             <a class="restaurant__content" href="menu_La_note_enchante.html">
                                 <div class="restaurant__content-img">
                                     <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+                                    <span class="badge-new">
+                                        Nouveau
+                                    </span>
                                 </div>
                                 <div class="restaurant__content-text">
                                     <div class="restaurant__content-text__name">
@@ -113,6 +120,9 @@
                             <a class="restaurant__content" href="menu_La_Francaise.html">
                                 <div class="restaurant__content-img">
                                     <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+                                    <span class="badge-new">
+                                        Nouveau
+                                    </span>
                                 </div>
                                 
                                 <div class="restaurant__content-text">
@@ -131,6 +141,9 @@
                             <a class="restaurant__content" href="menu_Le_delice_des_sens.html">
                                 <div class="restaurant__content-img">
                                     <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+                                    <span class="badge-new">
+                                        Nouveau
+                                    </span>
                                 </div>
 
                                 <div class="restaurant__content-text">

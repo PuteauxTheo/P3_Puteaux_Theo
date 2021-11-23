@@ -1,10 +1,32 @@
+.top__place{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-top-place;
 
+    &-icon{
+        display: flex;
+        margin: auto 10px;
+    }
+
+    
+}
 
 .info__restaurant{
+    background-color: $color-bg-info-restaurant;
+}
+.container__info__restaurant{
+    @include max__with__desktop;
     
+
+
+    @media screen and (min-width:992px) {
+        
+    }
+
     display: flex;
     flex-direction: column;
-    background-color: $color-bg-info-restaurant;
     align-items: center;
     padding-bottom: 50px;
     &__title{
@@ -40,18 +62,34 @@
     &__content{
         display: flex;
         flex-direction: row;
+        position: relative;
         height: 75px;
         border-radius: 20px;
         width: -webkit-fill-available;
         align-items: center;
-        margin: 15px;
+        margin: 15px 15px 15px 30px;
         background-color: $color-bg-fonctionnement;
+        .numero-fonctionnement{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            clip-path: circle(45%);
+            position: absolute;
+            background-color: $color-primary;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            left: -15px;
+        }
         &-icon{
             display: flex;
             height: 100%;
             width: 75px;
             justify-content: center;
             align-items: center;
+            .fa-store{
+                color: $color-primary;
+            }
         }
     }
     
@@ -94,12 +132,24 @@
     
     &-img{
         height: 175px;
+        position: relative;
         
         & > img{
             height: 100%;
             width: 100%;
             object-fit: cover;   
-            border-radius: 20px 20px 0px 0px;     
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        .badge-new{
+            position: absolute;
+            background-color: $color-tertiary;
+            color: darken($color-tertiary, 40%);
+            top: 15px;
+            right: 15px;
+            padding: 5px 10px;
+
+            
         }
     }
 
