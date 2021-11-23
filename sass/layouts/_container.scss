@@ -171,6 +171,30 @@
             width: 60px;
             justify-content: center;
             align-items: center;
+            position: relative;  
+
+            .menu_heart-bg{
+                position: absolute;
+                opacity: 0;
+            }
+
+            .menu_heart-nobg{
+                position: absolute;
+                opacity: 1;
+            }
+
+            &:hover{
+                & .menu_heart-bg{
+                    opacity: 1;
+                }
+
+                & .menu_heart-nobg{
+                    opacity: 0;
+                }
+            }
+
+            
+            
         }
     }
 }
