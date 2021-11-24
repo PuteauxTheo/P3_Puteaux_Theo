@@ -45,7 +45,13 @@ a {
   font-size: x-large;
 }
 
-.container__info__restaurant__button, .button__order {
+@media screen and (min-width: 992px) {
+  .content__info__restaurant__title, .content__info__restaurant__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+  }
+}
+.content__info__restaurant__button, .button__order {
   background-color: #FF79DA;
   background: linear-gradient(350deg, #9356DC 0%, #FF79DA 100%);
   color: #fff;
@@ -107,6 +113,11 @@ a {
   display: flex;
   margin: auto 10px;
 }
+.top__place-search {
+  height: 50px;
+  border: none;
+  background: #eaeaea;
+}
 
 .info__restaurant {
   background-color: #f6f6f6;
@@ -120,13 +131,26 @@ a {
   align-items: center;
   padding-bottom: 50px;
 }
-.container__info__restaurant__title {
-  text-align: center;
-  width: 75%;
+@media screen and (min-width: 992px) {
+  .container__info__restaurant {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
 }
-.container__info__restaurant__text {
+@media screen and (min-width: 992px) {
+  .container__info__restaurant .content__info__restaurant {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.container__info__restaurant .content__info__restaurant__title {
   text-align: center;
-  width: 75%;
+  margin: 25px 20px;
+}
+.container__info__restaurant .content__info__restaurant__text {
+  text-align: center;
+  margin: 25px 20px;
 }
 
 .fonctionnement {
