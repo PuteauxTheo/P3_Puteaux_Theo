@@ -43,3 +43,10 @@ a{
 .fa-arrow-left{
     font-size: x-large;
 }
+
+@media screen and (min-width:992px) {
+    .content__info__restaurant__title, .content__info__restaurant__text{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+    }
+}
