@@ -51,6 +51,10 @@ a {
     font-size: 18px;
   }
 }
+.top__title__menu > h1 {
+  font-family: "Shrikhand", cursive;
+}
+
 .content__info__restaurant__button, .button__order {
   background-color: #FF79DA;
   background: linear-gradient(350deg, #9356DC 0%, #FF79DA 100%);
@@ -58,6 +62,7 @@ a {
   border-radius: 100px;
   border: none;
   padding: 5px 20px;
+  box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.4);
 }
 
 .btn {
@@ -185,6 +190,7 @@ a {
   align-items: center;
   margin: 15px 15px 15px 30px;
   background-color: #f6f6f6;
+  box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.3);
 }
 .fonctionnement__content .numero-fonctionnement {
   display: flex;
@@ -210,7 +216,7 @@ a {
 }
 
 .restaurant {
-  background-color: #e0e0e0;
+  background-color: #f6f6f6;
 }
 
 .container__restaurant {
@@ -248,6 +254,7 @@ a {
   height: 250px;
   margin: 15px;
   border-radius: 20px;
+  box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.2);
 }
 .restaurant__content-img {
   height: 175px;
@@ -304,7 +311,7 @@ a {
 
 /*----------------------CSS POUR MENU -------------------*/
 .menu {
-  background-color: #d8d4d4;
+  background-color: #f6f6f6;
 }
 
 .img__menu > img {
@@ -324,6 +331,7 @@ a {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   margin: 15px;
+  padding-bottom: 30px;
 }
 .element__menu_container {
   display: grid;
@@ -345,6 +353,7 @@ a {
   background-color: #fff;
   padding: 10px;
   border-radius: 15px;
+  box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.2);
 }
 .element__menu__def-price {
   display: flex;
@@ -361,12 +370,6 @@ a {
   padding: 0px;
   margin: 20px 15px;
 }
-@media (max-width: 992px) and (min-width: 768px) {
-  .footer__list {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
 .footer__list-logo {
   display: flex;
   height: 25px;
@@ -375,11 +378,6 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-@media (max-width: 992px) and (min-width: 768px) {
-  .footer__list-element {
-    margin: 10px;
-  }
 }
 .footer__list-element--icon {
   display: flex;
