@@ -189,29 +189,45 @@
             width: 60px;
             justify-content: center;
             align-items: center;
-            position: relative;  
+            position: relative;
+            background: black;
 
-            .menu_heart-bg{
+            &:hover::before{
+                opacity:1;
+            }
+
+            &::before{
+                content: "";
                 position: absolute;
                 opacity: 0;
+                transition: 0.5s;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(180deg, $color-primary 10%, $color-secondary 60%);
             }
-
-            .menu_heart-nobg{
+            
+            .menu__heart{
+                background-color: white;
                 position: absolute;
-                opacity: 1;
+                mix-blend-mode: lighten;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                display:flex;
+                align-items:center;
+                justify-content:center;
             }
+                      
 
             &:hover{
-                & .menu_heart-bg{
-                    opacity: 1;
-                }
-
-                & .menu_heart-nobg{
+                .menu_heart-nobg{
                     opacity: 0;
                 }
             }
-
-            
             
         }
     }
