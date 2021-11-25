@@ -311,7 +311,6 @@ a {
 }
 .restaurant__content-text--icon .menu__heart {
   background-color: white;
-  position: absolute;
   mix-blend-mode: lighten;
   position: absolute;
   top: 0;
