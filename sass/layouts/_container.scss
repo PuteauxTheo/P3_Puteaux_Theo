@@ -236,52 +236,79 @@
 
 .menu{
     background-color: $color-bg-menu;
-}
 
-.img__menu{
-    & > img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-}
 
-.top__title__menu{
-    display: flex;
-    flex-direction: row;
-    margin: 15px;
-    justify-content: space-between;
-}
-
-.element__menu{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);    
-    margin: 15px;
-    padding-bottom: 30px;
-    
-    &_container{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        row-gap: 15px;
-        @media screen and (min-width:992px) {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            margin: 15px;
-            column-gap: 15px;
+    &__img{
+        & > img{
+            height: 100%;
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
         }
     }
-    &__def{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: #fff;
-        padding: 10px;  
-        border-radius: 15px; 
-        box-shadow: 0px 0px 10px 4px rgb(128 128 128 / 20%);    
 
-        &-price{
+    .menu__container{
+        background-color: $color-bg-menu;
+        @media (max-width:992px) and (min-width:768px) {
+            
+            width: 750px;
+            margin: 0px auto;
+            
+        }
+
+
+
+        @media screen and (min-width:993px) {
+            
+            @include max__with__desktop;
+            
+        }
+
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: -25px;
+        border-radius: 25px;
+        
+
+        .top__title__menu{
             display: flex;
-            align-items: flex-end;            
+            flex-direction: row;
+            margin: 15px;
+            justify-content: space-between;
+        }
+
+        .element__menu{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);    
+            margin: 15px;
+            padding-bottom: 30px;
+            
+            &_container{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                row-gap: 15px;
+                @media screen and (min-width:992px) {
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    margin: 15px;
+                    column-gap: 15px;
+                }
+            }
+            &__def{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: #fff;
+                padding: 10px;  
+                border-radius: 15px; 
+                box-shadow: 0px 0px 10px 4px rgb(128 128 128 / 20%);    
+
+                &-price{
+                    display: flex;
+                    align-items: flex-end;            
+                }
+            }
         }
     }
 }
