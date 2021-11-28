@@ -4,5 +4,6 @@
 
 @mixin max__with__desktop {
     max-width: 1280px;
-    margin: auto;
+    margin-right:  auto;
+    margin-left: auto;
 }
