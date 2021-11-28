@@ -249,15 +249,6 @@
 
     .menu__container{
         background-color: $color-bg-menu;
-        @media (max-width:992px) and (min-width:768px) {
-            
-            width: 750px;
-            margin: 0px auto;
-            
-        }
-
-
-
         @media screen and (min-width:993px) {
             
             @include max__with__desktop;
