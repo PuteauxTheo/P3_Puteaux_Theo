@@ -281,7 +281,7 @@
                 row-gap: 15px;
 
                 
-                @for $i from 1 to 3 {
+                @for $i from 1 to 4 {
                     .delay-#{$i} {
                         animation: delay 0.6s cubic-bezier(.5,1.58,.34,.82) both ;
                         transform-origin: center 0%;
