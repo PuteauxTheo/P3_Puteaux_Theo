@@ -414,14 +414,15 @@ a {
   display: flex;
   flex-direction: row;
   background-color: #fff;
-  padding: 10px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.2);
   position: relative;
+  overflow: hidden;
+  z-index: 2;
 }
 .menu .menu__container .element__menu__def:hover::after {
   opacity: 1;
-  width: 50%;
+  width: 20%;
 }
 .menu .menu__container .element__menu__def::after {
   content: "";
@@ -429,11 +430,12 @@ a {
   opacity: 0;
   height: 100%;
   transform-origin: right 50%;
-  animation: check 2000ms ease-in-out;
+  animation: check-bg 1000ms ease-in-out both;
   width: 0%;
   justify-content: none;
+  border-radius: 0px 15px 15px 0px;
 }
-@keyframes check {
+@keyframes check-bg {
   from {
     transform: scaleX(0);
   }
@@ -443,22 +445,36 @@ a {
 }
 .menu .menu__container .element__menu__def .menu__check {
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 100%;
+  overflow: inherit;
+  right: -20px;
+  /*transition-duration: 1s;
+  animation: check 2000ms ease-in-out both;*/
+}
+@keyframes check {
+  from {
+    right: -60px;
+  }
+  to {
+    right: 20px;
+  }
 }
 .menu .menu__container .element__menu__def:hover .menu__check {
-  opacity: 1;
+  transition-duration: 0.5s;
+  animation: check 1000ms ease-in-out both;
 }
 .menu .menu__container .element__menu__def-text {
   width: 100%;
+  padding: 10px;
 }
 .menu .menu__container .element__menu__def-price {
   display: flex;
   align-items: flex-end;
+  padding: 10px;
 }
 
 /*---------------------- LOADER ---------------------*/
