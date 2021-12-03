@@ -74,7 +74,12 @@
         }
                 
     }
-
+    .natural_bg{
+        background-color: $color-bg-fonctionnement;
+    }
+    .diff_bg{
+        background-color: rgb(240, 231, 252);
+    }
     &__content{
         display: flex;
         flex-direction: row;
@@ -83,9 +88,9 @@
         border-radius: 20px;
         width: -webkit-fill-available;
         align-items: center;
-        margin: 15px 15px 15px 30px;
-        background-color: $color-bg-fonctionnement;
+        margin: 15px 15px 15px 30px;        
         box-shadow: 0px 0px 10px 4px rgb(128 128 128 / 30%);
+        
         .numero-fonctionnement{
             display: flex;
             align-items: center;
