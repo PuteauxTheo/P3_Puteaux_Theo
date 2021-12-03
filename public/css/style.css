@@ -56,7 +56,7 @@ a {
 }
 
 .content__info__restaurant__button, .button__order {
-  background: linear-gradient(350deg, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(350deg, #9356df 0%, #FF79DA 100%);
   color: #fff;
   border-radius: 100px;
   border: none;
@@ -64,8 +64,8 @@ a {
   box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.4);
 }
 .content__info__restaurant__button:hover, .button__order:hover {
-  box-shadow: 0px 0px 10px 4px gray;
-  background: linear-gradient(350deg, rgba(147, 86, 220, 0.95) 0%, rgba(255, 121, 218, 0.95) 100%);
+  box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.8);
+  background: linear-gradient(350deg, rgba(147, 86, 223, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
 }
 
 .btn {
@@ -191,6 +191,12 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.fonctionnement .natural_bg {
+  background-color: #f6f6f6;
+}
+.fonctionnement .diff_bg {
+  background-color: #f0e7fc;
+}
 .fonctionnement__content {
   display: flex;
   flex-direction: row;
@@ -200,7 +206,6 @@ a {
   width: -webkit-fill-available;
   align-items: center;
   margin: 15px 15px 15px 30px;
-  background-color: #f6f6f6;
   box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.3);
 }
 .fonctionnement__content .numero-fonctionnement {
@@ -209,7 +214,7 @@ a {
   justify-content: center;
   clip-path: circle(45%);
   position: absolute;
-  background-color: #9356DC;
+  background-color: #9356df;
   color: #fff;
   width: 30px;
   height: 30px;
@@ -223,7 +228,7 @@ a {
   align-items: center;
 }
 .fonctionnement__content-icon .fa-store {
-  color: #9356DC;
+  color: #9356df;
 }
 
 .restaurant {
@@ -319,7 +324,7 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(180deg, #9356DC 10%, #FF79DA 60%);
+  background: linear-gradient(180deg, #9356df 10%, #FF79DA 60%);
 }
 .restaurant__content-text--icon .menu__heart {
   background-color: white;
