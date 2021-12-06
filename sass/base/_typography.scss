@@ -56,3 +56,9 @@ a{
         font-family: 'Shrikhand', cursive;
     }
 }
+
+.element__menu__def-text{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+}
