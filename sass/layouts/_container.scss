@@ -214,7 +214,7 @@
         padding-bottom: 30px;
         @media  screen and (min-width:992px) {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(4,1fr);
         }
         @media (max-width:992px) and (min-width:768px) {
             display: grid;
@@ -297,7 +297,7 @@
                 mix-blend-mode: lighten;
                 position: absolute;
                 top: 0;
-                left: 0;
+                left: 0;                
                 height: 100%;
                 width: 100%;
                 display:flex;
@@ -405,11 +405,23 @@
             grid-template-columns: repeat(1,1fr);    
             margin: 15px;
             padding-bottom: 30px;
+
+            .menu-title{
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 0.25em;
+                    width: 3em;
+                    background: $color-tertiary;
+                }
+            }
             
             &_container{
                 display: grid;
                 grid-template-columns: repeat(1,1fr);
                 row-gap: 15px;
+                padding-top: 25px;
 
                 
                 @for $i from 1 to 4 {
