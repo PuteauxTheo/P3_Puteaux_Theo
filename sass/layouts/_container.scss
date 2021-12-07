@@ -271,7 +271,54 @@
             display: flex;
             flex-direction: row;
             margin: 15px;
+            
             justify-content: space-between;
+
+            &--icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 60px;
+                width: 60px;
+                background: black;
+                position: relative;
+
+                &:hover::before{
+                    opacity:1;
+                }
+    
+                &::before{
+                    content: "";
+                    position: absolute;
+                    opacity: 0;
+                    transition: 0.5s;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: linear-gradient(180deg, $color-primary 10%, $color-secondary 60%);
+                }               
+                
+                .menu__heart{
+                    background-color: $color-bg-menu;
+                    mix-blend-mode: lighten;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                }
+                          
+    
+                &:hover{
+                    .menu_heart-nobg{
+                        opacity: 0;
+                    }
+                }
+            }
         }
 
         .element__menu{
@@ -290,7 +337,7 @@
                     .delay-#{$i} {
                         animation: delay 2s 1.5s cubic-bezier(.5,1.58,.34,.82) both ;
                         transform-origin: bottom 50%;
-                        animation-delay: #{$i/10}s;
+                        animation-delay: #{math.div($i, 10)}s;
                     }
                 }
 
