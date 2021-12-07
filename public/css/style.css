@@ -128,6 +128,113 @@ a {
   margin-left: 30px;
 }
 
+.container-pl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  background: rgba(200, 200, 200, 0.3);
+  height: 100%;
+  width: 100%;
+  animation: loader 0.1s 2s both;
+}
+.container-pl .pl, .container-pl .pl:before, .container-pl .pl:after {
+  animation: 2s linear infinite;
+}
+.container-pl .pl {
+  margin: 0 auto 1.5em auto;
+  position: relative;
+  width: 3em;
+  height: 3em;
+}
+.container-pl .pl:before, .container-pl .pl:after {
+  background: #FF79DA;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  transform-origin: 50% 100%;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+.container-pl .pl-text {
+  text-align: center;
+  justify-content: center;
+  color: #9356df;
+  text-transform: uppercase;
+}
+.container-pl .pl-lf:before, .container-pl .pl-lf:after {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+  top: 50%;
+  left: 50%;
+  width: 70.71%;
+  height: 70.71%;
+  transform-origin: 0 0;
+}
+.container-pl .pl-lf:before {
+  animation-name: leapFrogA;
+}
+.container-pl .pl-lf:after {
+  animation-name: leapFrogB;
+  background: #99E2D0;
+}
+@keyframes leapFrogA {
+  from {
+    transform: rotateZ(-135deg) rotateY(0deg) rotateX(0deg);
+    z-index: 0;
+  }
+  12.5% {
+    transform: rotateZ(-135deg) rotateY(-180deg) rotateX(0deg);
+    z-index: 1;
+  }
+  25%, 50% {
+    transform: rotateZ(-135deg) rotateY(-180deg) rotateX(-180deg);
+    z-index: 0;
+  }
+  62.5% {
+    transform: rotateZ(-135deg) rotateY(0deg) rotateX(-180deg);
+    z-index: 1;
+  }
+  75%, to {
+    transform: rotateZ(-135deg) rotateY(0deg) rotateX(-360deg);
+    z-index: 0;
+  }
+}
+@keyframes leapFrogB {
+  from, 25% {
+    transform: rotateZ(-45deg) rotateY(0deg) rotateX(0deg);
+    z-index: 0;
+  }
+  37.5% {
+    transform: rotateZ(-45deg) rotateY(-180deg) rotateX(0deg);
+    z-index: 1;
+  }
+  50%, 75% {
+    transform: rotateZ(-45deg) rotateY(-180deg) rotateX(-180deg);
+    z-index: 0;
+  }
+  87.5% {
+    transform: rotateZ(-45deg) rotateY(0deg) rotateX(-180deg);
+    z-index: 1;
+  }
+  to {
+    transform: rotateZ(-45deg) rotateY(0deg) rotateX(-360deg);
+    z-index: 0;
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
 .top__place {
   display: flex;
   flex-direction: row;
