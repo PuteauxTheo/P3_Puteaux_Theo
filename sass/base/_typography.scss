@@ -31,6 +31,7 @@
     @include no__marge;
 }
 
+
 a{
     text-decoration: none;
     color: inherit;
@@ -52,13 +53,19 @@ a{
 }
 
 .top__title__menu{
-    & > h1{
+    & > h2{
         font-family: 'Shrikhand', cursive;
-    }
+    }    
 }
 
 .element__menu__def-text{
         text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+}
+
+.element__menu-title, .element__menu-description{
+    text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
 }
