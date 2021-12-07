@@ -51,11 +51,17 @@ a {
     font-size: 18px;
   }
 }
-.top__title__menu > h1 {
+.top__title__menu > h2 {
   font-family: "Shrikhand", cursive;
 }
 
 .element__menu__def-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.element__menu-title, .element__menu-description {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -378,6 +384,44 @@ a {
   flex-direction: row;
   margin: 15px;
   justify-content: space-between;
+}
+.menu .menu__container .top__title__menu--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  background: black;
+  position: relative;
+}
+.menu .menu__container .top__title__menu--icon:hover::before {
+  opacity: 1;
+}
+.menu .menu__container .top__title__menu--icon::before {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #9356df 10%, #FF79DA 60%);
+}
+.menu .menu__container .top__title__menu--icon .menu__heart {
+  background-color: #f6f6f6;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu .menu__container .top__title__menu--icon:hover .menu_heart-nobg {
+  opacity: 0;
 }
 .menu .menu__container .element__menu {
   display: grid;
