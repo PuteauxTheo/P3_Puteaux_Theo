@@ -69,3 +69,9 @@ a{
         white-space: nowrap;
         overflow: hidden;
 }
+
+.menu-title{
+    & > h3 {
+        margin: 8px auto;
+    }
+}
