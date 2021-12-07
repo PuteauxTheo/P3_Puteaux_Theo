@@ -609,7 +609,6 @@ a {
   transform-origin: right 50%;
   animation: check-bg 1000ms ease-in-out both;
   width: 0%;
-  justify-content: none;
   border-radius: 0px 15px 15px 0px;
 }
 @keyframes check-bg {
