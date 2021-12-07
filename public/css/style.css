@@ -67,6 +67,10 @@ a {
   overflow: hidden;
 }
 
+.menu-title > h3 {
+  margin: 8px auto;
+}
+
 .content__info__restaurant__button, .button__order {
   background: linear-gradient(350deg, #9356df 0%, #FF79DA 100%);
   color: #fff;
@@ -374,7 +378,7 @@ a {
 @media screen and (min-width: 992px) {
   .container__restaurant__view {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (max-width: 992px) and (min-width: 768px) {
@@ -536,10 +540,21 @@ a {
   margin: 15px;
   padding-bottom: 30px;
 }
+.menu .menu__container .element__menu .menu-title {
+  position: relative;
+}
+.menu .menu__container .element__menu .menu-title::after {
+  content: "";
+  position: absolute;
+  height: 0.25em;
+  width: 3em;
+  background: #99E2D0;
+}
 .menu .menu__container .element__menu_container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   row-gap: 15px;
+  padding-top: 25px;
 }
 .menu .menu__container .element__menu_container .delay-1 {
   animation: delay 2s 1.5s cubic-bezier(0.5, 1.58, 0.34, 0.82) both;
