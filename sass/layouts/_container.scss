@@ -8,9 +8,9 @@
     background: rgb(200 200 200 / 30%);
     height: 100%;
     width: 100%;
-    animation: loader 0.1s 2s both;
+    animation: loader 0.1s 1.5s both;
     .pl, .pl:before, .pl:after {
-        animation: 2s linear infinite;
+        animation: 1.5s linear infinite;
     }
     .pl {
         margin: 0 auto 1.5em auto;
@@ -435,9 +435,11 @@
                 @keyframes delay {
                     from {
                         opacity: 0;
+                        transform: translateY(20px);
                     }
                     to {
                         opacity:1;
+                        transform: translateY(0px);
                     }
                 }
                 
@@ -458,70 +460,61 @@
                 position: relative;
                 overflow: hidden;
                 z-index: 2;
-                
-                
-                
+
                     
-                    &:hover::after{
-                        opacity: 1;
-                        width: 20%;
-                    }
-                    
-                    &::after{
-                        content: "";
+
+                    .menu__check{                          
+                        display: flex;   
                         background: $color-tertiary;
-                        opacity: 0;
-                        height: 100%;
-                        transform-origin: right 50%;
-                        animation: check-bg 1000ms ease-in-out both;
-                        width: 0%;
-                        border-radius: 0px 15px 15px 0px;
-
-                        
-                    }
-
-                    @keyframes check-bg {
-                        from{
-                            transform: scaleX(0);
-                        }
-
-                        to{
-                            transform: scaleX(1);                           
-                        }
-                    }
-
-                    .menu__check{
-                        position: absolute;
-                        opacity: 1;
-                        z-index: 1;
-                        display: flex;
                         align-items:center;
-                        height: 100%;
-                        overflow: inherit;
-                        right: -20px;
-                        /*transition-duration: 1s;
-                        animation: check 2000ms ease-in-out both;*/
+                        justify-content: center;
+                        height: 100%;            
+                        opacity: 1;
+                        z-index: 1;                     
+                        right: 0;                        
+                        width: 0;
+                        transform-origin: right 50%;
+                        animation: bg-check 3s ease-in-out both;                       
                         
+                        &-icon{
+                            font-size: 20px;
+                            opacity: 0;
+                            animation: rotate-check 2s ease-in-out both; 
+                            color: #fff;
+                            transform: rotate(360deg);
+                            
+                        }
 
                     }
 
-                    @keyframes check {
+                    @keyframes bg-check {
                         from{
-                            right: -60px;
+                            width: 0;
                         }
-
                         to{
-                            right: 20px;
+                            width: 20%;
+                        }
+                    }
+                    
+                    @keyframes rotate-check {
+                        from{
+                            transform: rotate(360deg);
+                        }
+                        to{
+                            transform: rotate(0deg);
                         }
                     }
 
                     &:hover{
                         .menu__check{
-                        transition-duration: 0.5s;
-                        animation: check 1000ms ease-in-out both;
-                                           
+                            transition-duration: 1s;
+                            width: 20%;
+                            &-icon{
+                                opacity: 1;
+                            }
                         }
                     }
+                    
                     
                 &-text{
                     width: 100%;
