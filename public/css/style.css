@@ -612,6 +612,22 @@ a {
   position: relative;
   overflow: hidden;
   z-index: 2;
+  /*@keyframes bg-check {
+      from{
+          width: 0;
+      }
+      to{
+          width: 20%;
+      }
+  }*/
+  /*@keyframes rotate-check {
+      from{
+          transform: rotate(360deg);
+      }
+      to{
+          transform: rotate(0deg);
+      }
+  }*/
 }
 .menu .menu__container .element__menu__def .menu__check {
   display: flex;
@@ -624,30 +640,16 @@ a {
   right: 0;
   width: 0;
   transform-origin: right 50%;
-  animation: bg-check 3s ease-in-out both;
+  animation: 3s ease-in-out both;
+  transition-duration: 0.5s;
 }
 .menu .menu__container .element__menu__def .menu__check-icon {
   font-size: 20px;
   opacity: 0;
-  animation: rotate-check 2s ease-in-out both;
+  animation: 2s ease-in-out both;
   color: #fff;
-  transform: rotate(360deg);
-}
-@keyframes bg-check {
-  from {
-    width: 0;
-  }
-  to {
-    width: 20%;
-  }
-}
-@keyframes rotate-check {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
 }
 .menu .menu__container .element__menu__def:hover .menu__check {
   transition-duration: 1s;
@@ -655,6 +657,7 @@ a {
 }
 .menu .menu__container .element__menu__def:hover .menu__check-icon {
   opacity: 1;
+  transform: rotate(0deg);
 }
 .menu .menu__container .element__menu__def-text {
   width: 100%;
