@@ -479,36 +479,38 @@
                         right: 0;                        
                         width: 0;
                         transform-origin: right 50%;
-                        animation: bg-check 3s ease-in-out both;                       
+                        animation: 3s ease-in-out both;   
+                        transition-duration: 0.5s;                    
                         
                         &-icon{
                             font-size: 20px;
                             opacity: 0;
-                            animation: rotate-check 2s ease-in-out both; 
+                            animation: 2s ease-in-out both; 
                             color: #fff;
-                            transform: rotate(360deg);
+                            transform: rotate(180deg);
+                            transition-duration: 0.5s;
                             
                         }
 
                     }
 
-                    @keyframes bg-check {
+                    /*@keyframes bg-check {
                         from{
                             width: 0;
                         }
                         to{
                             width: 20%;
                         }
-                    }
+                    }*/
                     
-                    @keyframes rotate-check {
+                    /*@keyframes rotate-check {
                         from{
                             transform: rotate(360deg);
                         }
                         to{
                             transform: rotate(0deg);
                         }
-                    }
+                    }*/
 
                     &:hover{
                         .menu__check{
@@ -516,6 +518,7 @@
                             width: 20%;
                             &-icon{
                                 opacity: 1;
+                                transform: rotate(0deg);
                             }
                         }
                     }
