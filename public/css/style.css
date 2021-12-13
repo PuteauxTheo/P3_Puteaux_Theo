@@ -584,6 +584,11 @@ a {
   transform-origin: bottom 50%;
   animation-delay: 0.3s;
 }
+.menu .menu__container .element__menu_container .delay-4 {
+  animation: delay 2s 1.5s cubic-bezier(0.5, 1.58, 0.34, 0.82) both;
+  transform-origin: bottom 50%;
+  animation-delay: 0.4s;
+}
 @keyframes delay {
   from {
     opacity: 0;
@@ -683,8 +688,12 @@ a {
 
 /*---------------------- LOADER ---------------------*/
 .footer {
-  padding: 20px;
   background-color: #383838;
+}
+.footer .container__footer {
+  padding: 20px;
+  margin: 0px auto;
+  max-width: 1280px;
 }
 .footer__list {
   display: flex;
