@@ -1,6 +1,11 @@
 .footer{
-    padding: 20px;
     background-color: rgb(56, 56, 56);
+    .container__footer{
+        padding: 20px;
+        margin: 0px auto;
+        max-width: 1280px;
+    }
+    
     &__list{
         display: flex;
         flex-direction: column;
