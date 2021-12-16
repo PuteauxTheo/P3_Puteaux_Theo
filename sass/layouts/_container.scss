@@ -431,7 +431,7 @@
                 @for $i from 1 to 5 {
                     .delay-#{$i} {
                         animation: delay 2s 1.5s cubic-bezier(.5,1.58,.34,.82) both ;
-                        transform-origin: bottom 50%;
+                        transform-origin: bottom center;
                         animation-delay: #{math.div($i, 10)}s;
                     }
                 }
@@ -493,25 +493,9 @@
                         }
 
                     }
-
-                    /*@keyframes bg-check {
-                        from{
-                            width: 0;
-                        }
-                        to{
-                            width: 20%;
-                        }
-                    }*/
+                        
                     
-                    /*@keyframes rotate-check {
-                        from{
-                            transform: rotate(360deg);
-                        }
-                        to{
-                            transform: rotate(0deg);
-                        }
-                    }*/
-                    /*&:focus{
+                    &:hover{
                         .menu__check{
                             transition-duration: 1s;
                             width: 20%;
@@ -520,21 +504,7 @@
                             transform: rotate(0deg);
                             }
                         }
-                    }*/
-
-                    /*@media screen and (min-width:992px){*/
-                        
-                    
-                        &:hover{
-                            .menu__check{
-                                transition-duration: 1s;
-                                width: 20%;
-                                &-icon{
-                                opacity: 1;
-                                transform: rotate(0deg);
-                                }
-                            }
-                        }
+                    }
                     
 
                     
