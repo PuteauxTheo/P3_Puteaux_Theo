@@ -571,22 +571,22 @@ a {
 }
 .menu .menu__container .element__menu_container .delay-1 {
   animation: delay 2s 1.5s cubic-bezier(0.5, 1.58, 0.34, 0.82) both;
-  transform-origin: bottom 50%;
+  transform-origin: bottom center;
   animation-delay: 0.1s;
 }
 .menu .menu__container .element__menu_container .delay-2 {
   animation: delay 2s 1.5s cubic-bezier(0.5, 1.58, 0.34, 0.82) both;
-  transform-origin: bottom 50%;
+  transform-origin: bottom center;
   animation-delay: 0.2s;
 }
 .menu .menu__container .element__menu_container .delay-3 {
   animation: delay 2s 1.5s cubic-bezier(0.5, 1.58, 0.34, 0.82) both;
-  transform-origin: bottom 50%;
+  transform-origin: bottom center;
   animation-delay: 0.3s;
 }
 .menu .menu__container .element__menu_container .delay-4 {
   animation: delay 2s 1.5s cubic-bezier(0.5, 1.58, 0.34, 0.82) both;
-  transform-origin: bottom 50%;
+  transform-origin: bottom center;
   animation-delay: 0.4s;
 }
 @keyframes delay {
@@ -618,33 +618,6 @@ a {
   position: relative;
   overflow: hidden;
   z-index: 2;
-  /*@keyframes bg-check {
-      from{
-          width: 0;
-      }
-      to{
-          width: 20%;
-      }
-  }*/
-  /*@keyframes rotate-check {
-      from{
-          transform: rotate(360deg);
-      }
-      to{
-          transform: rotate(0deg);
-      }
-  }*/
-  /*&:focus{
-      .menu__check{
-          transition-duration: 1s;
-          width: 20%;
-          &-icon{
-          opacity: 1;
-          transform: rotate(0deg);
-          }
-      }
-  }*/
-  /*@media screen and (min-width:992px){*/
 }
 .menu .menu__container .element__menu__def .menu__check {
   display: flex;
